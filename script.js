@@ -1,4 +1,3 @@
-let repetir=false;
 let usuarios=["agustina"];
 let inicio=false;
 let usuario;
@@ -28,7 +27,3 @@ else{
 }
 while (usuario<1 || usuario >2 || isNaN(usuario) || inicio===true);
 
-
-class Usuarios{
-    constructor(nombre, apellido,)
-}
