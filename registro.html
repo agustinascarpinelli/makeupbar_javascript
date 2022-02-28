@@ -10,30 +10,34 @@
     <title>Document</title>
 </head>
 <body>
-    <form  method="post" class="Registro">
+    <div class="container" id="registroContainer">
+    <form  class="registro" id="registroFormulario">
        <legend>REGISTRARTE</legend>
        <P>Es rápido y fácil</P>
-       <label for="nombre">Nombre: </label>
-       <input type="text" placeholder="Escribe tu nombre" required="true">
-       <label for="apellido">Apellido: </label>
-       <input type="text"placeholder="Escribe tu apellido"required="true"> 
-       <label for="email">Email: </label>
-       <input type="text" placeholder="Escribe tu email">
-       <label for="contraseña">Contraseña: </label>
-       <input type="password"placeholder="Escribe tu contraseña"required="true">
-       <label for="fechaNacimiento">Fecha de nacimiento: </label>
-       <input type="date" name="bday" required="true">
-       <label for="sexo">Sexo: </label>
+       <label for="nombre" class="formlabel">Nombre: </label>
+       <input type="text" placeholder id="registroNombre" name="registroNombre"="Escribe tu nombre" required="true">
+       <label for="apellido" class="formlabel">Apellido: </label>
+       <input type="text"placeholder="Escribe tu apellido"required="true" id="registroApellido" name="registroApellido"> 
+       <label for="email" class="formlabel">Email: </label>
+       <input type="text" placeholder="Escribe tu email" id="registroEmail" name="registroEmail">
+       <label for="fechaNacimiento" class="formlabel">Fecha de nacimiento: </label>
+       <input type="date"  required="true" id="registroNacimiento" name="registroNacimiento">
+       <label for="sexo" class="formlabel">Sexo: </label>
            <input type="radio" value="mujer" name="sexo">
-           <label for="mujer">Mujer</label>
+           <label for="mujer" class="formlabel">Mujer</label>
            <input type="radio" value="hombre" name="sexo">
-           <label for="hombre">Hombre</label>
+           <label for="hombre" class="formlabel">Hombre</label>
            <input type="radio" value="personalizado" name="sexo">
-           <label for="personalizado">Personalizado</label>
-       <<input type="submit" value="Registrarme" >>
+           <label for="personalizado" class="formlabel">Personalizado</label>
+        <label for="contraseña" class="formlabel"id="alerta2">Contraseña: </label>
+        <input type="password" placeholder="Elige una contraseña" required="true" name="registroContraseña" id="registroContraseña"> 
+        <label for="contraseña" class="formlabel">Repite la contraseña: </label>
+        <input type="password" placeholder="Repite tu contraseña" required="true" name="registroContraseña2" id="registroContraseña2"> 
+       <button type="submit" id="registroBoton" value="Registrarme" >Registrarme</button>
        <p>Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de datos y la Política de cookies. Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.</p>
     </form>
-
+</div>
+<a href="index.html">ingresar</a>
     <script src="script.js"></script>
 </body>
 </html>
