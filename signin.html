@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-    <title>BeautyStore</title>
+    <title>MakeUpBar</title>
     <link rel="short cut icon" href="imagenes/logo2.png">
 </head>
 
@@ -76,73 +76,37 @@
         </nav>
     </header>
     <main>
-        <!--searching-->
-        <div class="px-3 py-2 border-bottom mb-3">
-            <div class="container d-flex flex-wrap justify-content-center">
-                <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
-                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                </form>
-            </div>
-        </div>
-        <!--Carrousel-->
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner" >
-                <div class="carousel-item active">
-                    <img src="./imagenes/makeup.jpeg" width="100%" height="100%"> 
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1>Maquillaje</h1>
-                            <p>Some representative placeholder content for the first slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                        </div>
-                    </div>
+        <!--Sign-in form-->
+        <div class="container" id="loginContainer">
+            <form class="login" id="loginForm">
+                <h1 class="h3 mb-3 fw-normal">Ingresa a tu cuenta</h1>
+
+                <div class="form-floating">
+                    <input type="email" class="form-control" placeholder="Escribe tu email" required="true"
+                        id="userEmail" name="userEmail">
+                    <label for="floatingInput">Email </label>
                 </div>
-                <div class="carousel-item" >
-                    <img src="./imagenes/face.jpg " width="100%" height="100%">
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1>Dermocosmetica</h1>
-                            <p>Some representative placeholder content for the first slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                        </div>
-                    </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" placeholder="Contraseña" required="true"
+                        id="userPassword" name="userPassword">
+                    <label for="floatingPassword">Contraseña</label>
                 </div>
-                <div class="carousel-item">
-                    <img src="./imagenes/hair.jpg " width="100%" max-height="100%">
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1>Cuidado capilar</h1>
-                            <p>Some representative placeholder content for the first slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                        </div>
-                    </div>
+
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Recordarme
+                    </label>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+                <button class="w-100 btn btn-lg btn-primary" type="submit" id="signInButton">Ingresar</button>
+                <button type="submit"><a
+                        href="singup.html">Registrarme</a></button>
+                <a href="#" id="sendEmail">¿Olvidaste tu Contraseña?</a>
+                <p id="alert1"></p>
+                <p>Usuario: admin@admin </br> Contraseña:123456</p>
+                <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+            </form>
         </div>
-        <div class="shipping">
-
-        </div>
-        <div class="sections">
-
-        </div>
-        <div class="randomProducts">
-
-        </div>
-
+        <div id="divEmail"></div>
     </main>
     <!--footer-->
     <div class="container">
@@ -210,6 +174,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="./javascript/signin.js"></script>
 </body>
 
 </html>
