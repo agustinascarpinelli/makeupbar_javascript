@@ -1,6 +1,7 @@
 Swal.fire({
-    text:'Ingresando a tu cuenta en MUB tenes un 10%OFF en el total de tu compra',
     html:
+    '<p>Ingresando a tu cuenta en MUB tenes un 10%OFF en el total de tu compra</p>'+
+    '</br>'+
     '<a href="signup.html">Suscribirme</a> ' +
     '<a href="signin.html">Ingresar</a> ',
     imageUrl: 'imagenes/logodiscount.png',
