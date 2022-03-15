@@ -12,11 +12,11 @@ class Makeup{
 
 const makeup= [];
 
-let lorealLipStick=new Makeup("Loreal labial liquido", 01,"Labial liquido larga duracion Loreal Paris x 7 gr","../imagenes/img-01/loreal_lip01.jpg", 998.50,10,0101)
-let rimmelLipStick=new Makeup("Rimmel lapiz labial", 01,"Lapiz labial Rimmel London x 4,2 gr","../imagenes/img-01/rimmel-lipstick-01.jpg",1350,10,0102)
-let macLipStick=new Makeup("Mac lapiz labial",01,"Lapiz labial Mac Ultra duracion x 5 gr","../imagenes/img-01/mac_lip01.jpg",1890,10,0103)
-let maybellineLipStick=new Makeup("Mayabelline labial liquido",01,"Labial liquido Maybelline Superstay x 8 gr","../imagenes/img-01/maybelline_lip01.jpg",1500,10,0104)
-let covergirlLipStick=new Makeup("Covergirl labial liquido",01,"Labial liquido Covergirl matte x 7,5 gr ","../imagenes/img-01/covergirl_lip01.jpg",1750,10,0105)
+let lorealLipStick=new Makeup("Loreal labial liquido", 01,"Labial liquido larga duracion Loreal Paris x 7 gr","imagenes/img-01/loreal_lip01.jpg", 998.50,10,0101)
+let rimmelLipStick=new Makeup("Rimmel lapiz labial", 01,"Lapiz labial Rimmel London x 4,2 gr","imagenes/img-01/rimmel-lipstick-01.jpg",1350,10,0102)
+let macLipStick=new Makeup("Mac lapiz labial",01,"Lapiz labial Mac Ultra duracion x 5 gr","imagenes/img-01/mac_lip01.jpg",1890,10,0103)
+let maybellineLipStick=new Makeup("Mayabelline labial liquido",01,"Labial liquido Maybelline Superstay x 8 gr","imagenes/img-01/maybelline_lip01.jpg",1500,10,0104)
+let covergirlLipStick=new Makeup("Covergirl labial liquido",01,"Labial liquido Covergirl matte x 7,5 gr ","imagenes/img-01/covergirl_lip01.jpg",1750,10,0105)
 
 makeup.push(lorealLipStick,rimmelLipStick,macLipStick,maybellineLipStick,covergirlLipStick)
 
