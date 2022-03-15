@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  background-color: #f8f9fa; }
+
+.imgProd {
+  position: relative; }
+
+.products {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat 2, auto;
+  grid-template-rows: repeat(3, auto);
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 2rem;
+  grid-template-areas: "card1 card2"  "card3 card4"  "card5 card5"; }
+  .products .card-65 {
+    grid-area: card1; }
+  .products .card-66 {
+    grid-area: card2; }
+  .products .card-67 {
+    grid-area: card3; }
+  .products .card-68 {
+    grid-area: card4; }
+  .products .card-69 {
+    grid-area: card5; }
+  .products .card {
+    width: 20rem;
+    align-items: center; }
+    .products .card img {
+      width: 180px;
+      height: 190px; }
+
+.sidebar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  position: absolute;
+  box-shadow: 10px 10px 15px rgba(67, 224, 217, 0.5);
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid grey;
+  z-index: 2;
+  width: 30%;
+  visibility: hidden;
+  left: 70%; }
+
+.active {
+  visibility: visible; }
+
+.shoppingBox {
+  width: 20rem; }
+  .shoppingBox img {
+    width: 10rem; }
