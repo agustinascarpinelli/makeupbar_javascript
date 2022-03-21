@@ -1,0 +1,41 @@
+[{"title":"Loreal labial liquido",
+  "code":1,
+  "description":"Labial liquido larga duracion Loreal Paris x 7 gr",
+  "img":"loreal_lip01.jpg",
+  "price":998.50,
+  "stock":10,
+  "id":101
+  },
+{"title":"Rimmel lapiz labial",
+  "code":1,
+  "description":"Lapiz labial Rimmel London x 4,2 gr",
+  "img":"rimmel-lipstick-01.jpg",
+  "price":1350,
+  "stock":10,
+  "id":102
+  },
+{"title":"Mac lapiz labial",
+   "code":1,
+   "description":"Lapiz labial Mac Ultra duracion x 5 gr",
+   "img":"mac_lip01.jpg",
+   "price":1890,
+   "stock":10,
+   "id":103
+  },
+{"title":"Mayabelline labial liquido",
+    "code":1,
+    "description":"Labial liquido Maybelline Superstay x 8 gr",
+    "img":"maybelline_lip01.jpg",
+    "price":1500,
+    "stock":10,
+    "id":104
+   },
+{"title":"Covergirl labial liquido",
+    "code":1,
+    "description":"Labial liquido Covergirl matte x 7,5 gr ",
+    "img":"covergirl_lip01.jpg",
+    "price":1750,
+    "stock":10,
+    "id":105
+}
+]

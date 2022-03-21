@@ -1,0 +1,19 @@
+footer{
+    a{
+        color:$primary;
+        font-size: 1rem;
+        font-weight: bold;
+        &:hover{
+            color:$dark;
+        }
+    }
+h5{
+    color:$primary;
+    font-weight: bold;
+    font-size: 1rem;
+   
+}
+p{
+    color:$dark;
+}
+}

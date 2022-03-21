@@ -1,0 +1,40 @@
+
+.navbar{
+   background-color: $secondary;
+padding-top: 0rem;
+   padding-bottom: 0rem;
+   
+    .logo{
+        width:75px;
+    }
+div{
+    ul{
+    li{
+        
+        a{
+            color:$primary;
+            font-weight: bold;
+            font-size: 1rem;
+
+        
+        &:hover{
+            color:$dark;
+        }
+
+        
+        
+    }
+
+    .icons{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+}
+}
+
+
+}
+

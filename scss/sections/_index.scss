@@ -1,0 +1,11 @@
+.carousel{
+    h1{
+         font-size: 75px;
+         color:$white;
+         
+    }
+    .carousel-indicators [data-bs-target]{
+        background-color: $primary;
+    }
+  
+}
