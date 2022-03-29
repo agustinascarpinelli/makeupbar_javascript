@@ -32,10 +32,9 @@ showProducts().then(products=>{
   products.forEach((product,index)=>{
     divProducts.innerHTML+=`
     <div class="card card${product.id}" style="width: 18rem;">
-<div class="img-prod-div"><img src="./imagenes/img-01/${product.img}" class="imgProd card-img-top" alt="..."> <button class="color "></button><button class="color "></button><button class="color"></button></div>
+<div class="img-prod-div"><img src="./imagenes/img-01/${product.img}" class="imgProd card-img-top" alt="..."> </div>
 <div class="card-body">
 <h5 class="title">${product.title}</h5>
-<p class="description">${product.description}</p>
 <p class="price">$ ${product.price}</p>
 <button class="btnAdd btn btn-primary" data-id="${product.id}">Agregar al carrito</button>
 </div>

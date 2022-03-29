@@ -10,7 +10,7 @@ body.body {
     text-decoration: none; }
 
 .button1 {
-  background-color: #D6B4B2;
+  background-color: #DDDDDD;
   border-radius: 0.5rem;
   border: none;
   padding: 5px;
@@ -28,7 +28,7 @@ body.body {
     color: #352723; }
 
 .button2 {
-  background-color: #C24660;
+  background-color: #DDDDDD;
   border-radius: 0.5rem;
   border: none;
   padding: 5px;
@@ -40,6 +40,12 @@ body.body {
   transform: scale(1.07);
   cursor: pointer;
   color: #352723; }
+
+.discount {
+  text-align: center;
+  background-color: #BABBBE;
+  color: #C24660;
+  font-weight: bold; }
 
 .navbar {
   background-color: #D6B4B2;
