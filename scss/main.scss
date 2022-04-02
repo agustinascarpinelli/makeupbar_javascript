@@ -5,11 +5,17 @@
   }
   body.body{
     font-family: 'Montserrat', sans-serif;
-    background-color:#D6B4B2 ;
+    background-image:url("../imagenes/bgmarblee.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
     a{
       text-decoration: none;
     } 
   }
+ .container{
+  background-color: #DDDD;
+ }
     
   
 @import './variables/colors';
@@ -20,3 +26,7 @@
 @import './sections/index';
 @import './products/products';
 @import './shoppingCart/shoppingCart';
+@import './sections/questions';
+@import './sections/contact';
+@import './sections/signin';
+@import './sections/signup';

@@ -1,40 +1,83 @@
+.navbar {
+  background-color: $secondary;
+  padding-top: 0rem!important;
+  padding-bottom: 0rem!important;
+  .navbar-collapse {
+    
+    flex-grow: 0;}
+  .nav-link:focus,
+  .nav-link:hover {
+    color: black !important;
+  }
+  
+  .navbar-toggler-icon {
+    color:$primary;
+  
+  }
+  
+  
 
-.navbar{
-   background-color: $secondary;
-padding-top: 0rem;
-   padding-bottom: 0rem;
-   
-    .logo{
-        width:75px;
-    }
-div{
-    ul{
-    li{
-        
-        a{
-            color:$primary;
-            font-weight: bold;
-            font-size: 1rem;
 
-        
-        &:hover{
-            color:$dark;
+
+  .logo {
+    width: 80px;
+  }
+  div {.navbar-nav{ align-items: center;}
+    ul {
+      
+      li {
+        a {
+          color: $primary;
+          font-weight: bold;
+          font-size: 1rem;
+          ion-icon{
+              font-size: 20px;
+          }
+
+          &:hover {
+            color: $dark;
+          }
         }
 
-        
-        
+        .icons {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+      }
     }
-
-    .icons{
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+  }
+  
+  .cart{
+    display: inline-block;
+    text-align: center;
+    a{
+        display: block;
+        position: relative;
+        margin: 0rem;
+      span{
+        display: block;
+        margin: 0rem;
+      }
+      ion-icon{
         text-align: center;
+        margin: 0rem;
+      }
     }
-}
-}
-}
-
-
-}
-
+    .amount {
+      position: absolute;
+      top: 0;
+      left: 55%;
+      background:$primary;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 2px;
+    }
+  
+  }}

@@ -7,11 +7,11 @@ constructor(email, contraseña){
 let users =[]
 let userAdmin= new Users ("admin@admin","123456")
 users.push(userAdmin)
-if (localStorage.getItem('usersRegister')){
-    users=JSON.parse(localStorage.getItem('usersRegister'))
+if (localStorage.getItem('usersRegistration')){
+    users=JSON.parse(localStorage.getItem('usersRegistration'))
     }
     else{
-        localStorage.setItem('usersRegister',JSON.stringify(users))
+        localStorage.setItem('usersRegistration',JSON.stringify(users))
     }
 
     
@@ -42,19 +42,20 @@ if (localStorage.getItem('usersRegister')){
 let sendEmail=document.getElementById("sendEmail")
 let divEmail=document.getElementById("divEmail")
 
-sendEmail.addEventListener('click',()=>{
-divEmail.innerHTML=`
-<label for="email" name="sendEmail" id="sendEmail">Ingresa tu email</label>
-<input type="text"name="emailCheck" id="emailCheck" placeholder="Email">
-<button type="submit" name="buttonCheck" id ="buttonCheck">Enviar</button>
-`
-})
+/*sendEmail.addEventListener('click',()=>{
+    send();
+    })
 
-//let buttonCheck=document.getElementById("buttonCheck")
-
-//buttonCheck.addEventListener('click',()=>{
-
- //divEmail.innerHTML=`
- //<p>Se ha enviado un email para recuperar la contraseña</p>`
- //})
-
+    const send=()=>{
+        const { value: email } =  Swal.fire({
+            title: 'Input email address',
+            input: 'email',
+            inputLabel: 'Your email address',
+            inputPlaceholder: 'Enter your email address'
+          })
+          
+          if (email) {
+            Swal.fire(`Entered email: ${email}`)
+          }
+    
+    }*/

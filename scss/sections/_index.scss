@@ -7,5 +7,102 @@
     .carousel-indicators [data-bs-target]{
         background-color: $primary;
     }
-  
+
+
+}
+
+
+.info{
+   color:$primary;
+   text-align: center;
+   padding-top:3rem;
+   padding-bottom:3rem;
+   display:grid;
+   grid-template-columns: 4 auto;
+   grid-template-rows: 3 auto;
+   grid-template-areas: "t t t t"
+   "p p p p"
+   "shipping credit cash moto";
+  h2{
+      font-weight: bold;
+     grid-area:t ;
+     font-size: 4rem;
+  }
+  p{
+      font-weight: bold;
+      grid-area: p;
+  }
+  div{
+      ion-icon{
+          font-size: 3rem;
+          padding-top: 2rem;
+      }
+
+    .shipping{
+        grid-area: shipping;
+    }
+    .credit{
+        grid-area: credit;
+    }
+
+    .cash{
+        grid-area: cash;
+    }
+
+    .moto{
+        grid-area: moto;
+    }
+  }
+}
+
+.info2{
+    color:$primary;
+    text-align: center;
+    padding-bottom: 3rem;
+
+h2{
+    font-weight: bold;
+    font-size: 3rem;
+}
+a{
+    font-size: 2rem;
+    color: $secondary;
+    
+}
+a:hover{
+    color:$dark;
+}
+
+}
+@media (max-width: 768px) {
+    .info{
+        grid-template-columns: 1 auto;
+        grid-template-rows: 6 auto;
+        grid-template-areas: "t "
+        "p "
+        "shipping" 
+        "credit"
+         "cash" 
+         "moto";
+
+         h2{
+             font-size: 2rem;
+         }
+         div{
+             ion-icon{
+                 font-size: 1.5rem;
+             }
+         }
+    }
+    .info2{
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-size: 1.5rem;
+        }
+        a{
+            font-size: 1rem;
+        }
+    }
+
 }

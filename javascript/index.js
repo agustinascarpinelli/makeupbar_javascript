@@ -8,14 +8,12 @@ const swalWithBootstrapButtons = Swal.mixin({
 
 Swal.fire({
     html:
-    '<p color:"#C24660">Ingresando a tu cuenta en MUB tenes un 10%OFF</p>'+
-    '<a class="button2" href="signup.html">Suscribirme</a> ' +
-    '<a class="button2" href="signin.html">Ingresar</a> ',
+    '<p color:"#C24660">Ingresando el codigo ABRILMKB tenes un 10% OFF en el total de tu compra</p>',
     imageUrl: 'imagenes/logodiscount.png',
     imageWidth: 150,
-    imageHeight: 150,
     imageAlt: 'logo discount',
     background:"#EEEEED",
+    overflow:hidden,
     
   
 

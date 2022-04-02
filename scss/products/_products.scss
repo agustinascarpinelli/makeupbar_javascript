@@ -11,33 +11,79 @@
   margin: 0 auto;
   max-width: 120rem;
   padding: 2rem;
-  background-color: #fff;
+  background-color:#DDDD;
+  border-radius: 0.3rem;
   margin: 2rem;
-  grid-template-areas:"card1 card2" 
+  grid-template-areas:"h2 h2" 
   "card3 card4" 
-  "card5 card5"  ;
+  "card5 card6"  ;
 
-  .card-65{
-    grid-area:card1;
-  }
-  .card-66{
-    grid-area:card2;
-  }
-  .card-67{
-    grid-area:card3;
-  }
-  .card-68{
-    grid-area:card4;
-  }
-  .card-69{
-    grid-area:card5;
-  }
+ 
 .card{
   width:20rem;
   align-items: center;
 img{
-  width:180px;
-  height:190px;
+  width:280px;
+  height:300px;
+  
+ 
 }
+
+
 }
+
+h2{
+  color:$primary;
+  font-weight: bold;
+  text-align: center;
+  grid-area: h2;
 }
+.cardProduct{
+  background-color: $grey_5;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  width:280px;
+  height:550px;
+ .card-body{
+ 
+   text-align: center;
+   font-weight: bold;
+   h5{
+     font-weight: bold;
+     color:$primary;
+   }
+   .priceMin{
+     color:$grey_3;
+
+   }
+ }
+}
+
+}
+@media (max-width: 768px) {
+   .products{
+     grid-template-columns: repeate(1, auto);
+     grid-template-rows: repeat(6,auto);
+     grid-template-areas: "h2""card2""card3""card4""card5""card6";
+   }
+   .prodFilter{
+    button{ 
+      img{
+      width:5rem;
+   }
+
+  }}}
+
+    
+  .prodFilter{
+    display: flex;
+   margin:0;
+    justify-content: space-evenly;
+    button{
+      
+      border: none;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      img{ width:10rem;}
+    }
+  }

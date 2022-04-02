@@ -1,7 +1,8 @@
 .sidebar{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
     justify-content: center;
+    
+justify-items: center;
     position: absolute;
     box-shadow: 10px 10px 15px rgba(67, 224, 217, 0.5);
     flex-direction: column;
@@ -16,12 +17,35 @@
 
 .active{
     visibility: visible;
+
+
+.shopping-box{
+ color:$primary;
+ text-align: center;
+    h5 {
+        font-size: 1rem;
+    }
+.amnt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   
 }
-.shoppingBox{
-    width: 20rem;
-    img{
-        width: 10rem;
+button{
+    margin-bottom: 1rem;
+}
+}}
+
+.empty{
+    grid-template-columns: repeat(1,1fr);
+    
+    h2{
+        color: $primary;
+        font-weight: bold;
+        text-align: center;
+        
+        font-size: 1rem;
     }
 }
-
 

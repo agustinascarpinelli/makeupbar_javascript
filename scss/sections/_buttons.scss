@@ -36,4 +36,53 @@
         cursor: pointer;
         color: $dark;
       }
-      
+
+
+  .button3{
+    background-color:$secondary;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 5px;
+    color: $primary;
+    text-transform: uppercase;
+      font-weight: bold;
+  }
+
+
+  .button3:hover{
+    cursor: pointer;
+    color: $dark;
+  }
+  .button3:active{
+    transform: scale(1.07);
+  }
+
+  .btnc{
+    background-color:$secondary;
+    border-radius: 50%;
+    border: none;
+    padding-left:0.2rem;
+    padding-right: 0.2rem;
+  }
+
+  .btnc2{
+    background-color:$grey_4;
+    border-radius: 0.5rem;
+    border: none;
+    max-width:10rem;
+    color: $secondary;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+  }
+
+  .btnc3{
+    background-color:$secondary;
+    border-radius: 0.5rem;
+    border: none;
+    max-width:12rem;
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+  }

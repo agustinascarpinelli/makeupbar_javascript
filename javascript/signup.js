@@ -46,7 +46,6 @@ else{
     localStorage.setItem('UserRegistration', JSON.stringify(newUser))
 }
 
-registrationButton.innerHTML+=`
-<a href="index.html"></a>`
+registrationContainer.innerHTML+=`<div class=""> <a href="../index.html"></a></div>`
 }
 })

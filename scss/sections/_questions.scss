@@ -1,0 +1,30 @@
+#questions{
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: $primary;
+        padding-bottom: 2rem;
+    }
+    padding: 3rem;
+    .accordion-button:not(.collapsed) {
+        color: $dark;
+        background-color:$secondary;
+        box-shadow: none;
+      }
+      
+      .accordion-button:focus {
+        border-color: $primary;
+        outline: 0;
+        box-shadow: none;
+      }
+      .accordion-body{
+          color:$primary;
+      }
+      .accordion-header{
+      button{
+          color:$primary;
+          font-weight: bold;
+      }}
+
+      
+}
