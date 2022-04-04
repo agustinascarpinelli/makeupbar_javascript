@@ -2,6 +2,13 @@
   text-align: center;
   color:$primary;
   padding:2rem;
+  a{
+    color:$primary;
+    text-decoration: none;
+  }
+  a:hover{
+    color:$dark;
+  }
 
   h1{
       font-weight: bold;

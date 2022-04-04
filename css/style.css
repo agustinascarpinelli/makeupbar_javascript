@@ -391,6 +391,11 @@ footer {
   text-align: center;
   color: #C24660;
   padding: 2rem; }
+  .form-contact a {
+    color: #C24660;
+    text-decoration: none; }
+  .form-contact a:hover {
+    color: #352723; }
   .form-contact h1 {
     font-weight: bold; }
   .form-contact input.form-control:focus {

@@ -9,7 +9,7 @@ btnShopping.addEventListener("click", ()=>{
 })
 
 const showShoppingCart=()=>{
-  if (shoppingCart.length===0){sidebar.innerHTML=`<div class="shopping-box empty "><h2 class="mb-2">Aun no has agregado productos</h2></div>`}
+  if (shoppingCart.length===0){sidebar.innerHTML=`<div class="shopping-box empty "><h2 class="mb-2" ><ion-icon name="alert-circle-outline"></ion-icon> Aun no has agregado productos</h2></div>`}
 else{
     sidebar.innerHTML="";
     let total=0;
@@ -47,10 +47,13 @@ else{
 
 const subtractProduct=(productLess)=>{
     let productAlready=shoppingCart.find((element)=>element.id===Number(productLess))
+    let indexProductAlready=shoppingCart.indexOf(productAlready);
     if (productAlready){
       productAlready.amount--;
+      shoppingCart.splice(indexProductAlready,1)
       if(productAlready.amount===0){
         clearProduct(productLess);
+        shoppingCart.splice(indexProductAlready,1)
       }
     }
     showShoppingCart();
@@ -59,7 +62,7 @@ const subtractProduct=(productLess)=>{
   const increaseProduct=(productAdd)=>{
     let productAlready=shoppingCart.find((element)=>element.id===Number(productAdd))
      productAlready.amount++;
-    showShoppingCart();
+      showShoppingCart();
   }
   
   const clearProduct=(productClear)=>{
