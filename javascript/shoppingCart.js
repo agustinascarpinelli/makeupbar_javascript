@@ -14,7 +14,7 @@ else{
     sidebar.innerHTML="";
     let total=0;
     shoppingCart.forEach((element)=>{
-        let{img,name,code,price,amount,id}= element;
+        let{img,name,price,amount,id}= element;
         total+= price*amount;
         sidebar.innerHTML+=`
         <div class="shopping-box card mb-3">
@@ -47,17 +47,19 @@ else{
 
 const subtractProduct=(productLess)=>{
     let productAlready=shoppingCart.find((element)=>element.id===Number(productLess))
-    let indexProductAlready=shoppingCart.indexOf(productAlready);
+    
     if (productAlready){
       productAlready.amount--;
-      shoppingCart.splice(indexProductAlready,1)
+    }
       if(productAlready.amount===0){
         clearProduct(productLess);
-        shoppingCart.splice(indexProductAlready,1)
-      }
-    }
-    showShoppingCart();
-  };
+            }
+    
+            showShoppingCart(); 
+   
+  }
+ 
+
   
   const increaseProduct=(productAdd)=>{
     let productAlready=shoppingCart.find((element)=>element.id===Number(productAdd))
@@ -67,10 +69,11 @@ const subtractProduct=(productLess)=>{
   
   const clearProduct=(productClear)=>{
     shoppingCart=shoppingCart.filter((element)=>element.id!==Number(productClear));
-    document.querySelector(".amount").textContent--;
-    
-    
+    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+    document.querySelector(".amount").textContent=0;
     showShoppingCart();
+    
+    
   }
 
   const clearCart=()=>{
@@ -78,10 +81,11 @@ const subtractProduct=(productLess)=>{
     let total=0;
     document.querySelector(".amount").textContent=total;
     
-  
-
     showShoppingCart();
   }
+   const  processOrder=()=>{  
+    location.href = "order.html";
+}
   
   const listenButtonsSideBar=()=>{
     sidebar.addEventListener("click",(e)=>{
@@ -97,6 +101,9 @@ const subtractProduct=(productLess)=>{
       if (e.target.classList.contains("btn-clearAll"))  {
         clearCart(e.target.getAttribute("data-id"));
       }    
+      if(e.target.classList.contains("btn-finish")){
+        processOrder();
+      }
     })
   }
   

@@ -67,8 +67,8 @@ body.body {
   background-color: #D6B4B2;
   border-radius: 50%;
   border: none;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem; }
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
 
 .btnc2 {
   background-color: #DDDDDD;
@@ -87,6 +87,13 @@ body.body {
   color: #C24660;
   text-transform: uppercase;
   font-weight: bold; }
+
+.btnoc {
+  color: #C24660;
+  background-color: #D6B4B2;
+  border-radius: 50%; }
+  .btnoc:hover {
+    color: #352723; }
 
 .divDisc {
   background-color: #BABBBE;
@@ -341,7 +348,8 @@ footer {
   z-index: 2;
   width: 30%;
   visibility: hidden;
-  left: 70%; }
+  left: 70%;
+  padding-bottom: 1rem; }
 
 .active {
   visibility: visible; }
@@ -448,3 +456,24 @@ footer {
     margin-top: 2rem;
     margin-bottom: 2rem;
     max-width: 10rem; }
+
+#loading {
+  display: none;
+  width: 20px; }
+
+.orderPage {
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
+  .orderPage h2 {
+    color: #C24660;
+    font-weight: bold; }
+  .orderPage #list-order thead tr th {
+    color: #C24660; }
+  .orderPage #total {
+    margin-bottom: 1rem;
+    text-align: right; }
+  .orderPage .total {
+    text-align: center; }
+  .orderPage .code {
+    text-align: center;
+    margin-bottom: 1rem; }
