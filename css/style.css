@@ -90,8 +90,7 @@ body.body {
 
 .btnoc {
   color: #C24660;
-  background-color: #D6B4B2;
-  border-radius: 50%; }
+  padding: auto; }
   .btnoc:hover {
     color: #352723; }
 
@@ -477,3 +476,8 @@ footer {
   .orderPage .code {
     text-align: center;
     margin-bottom: 1rem; }
+  .orderPage .amnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start; }

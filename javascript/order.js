@@ -5,6 +5,7 @@ const email = document.getElementById('email');
 const finishOrderBtn = document.getElementById('finish-order');
 const disc=document.getElementById("discount").value;
 const total=document.getElementById('total')
+const orderList = document.querySelector("#orderList tbody");
 
 
 loadEvents();
@@ -17,23 +18,28 @@ function loadEvents() {
            e.target.parentElement.parentElement.remove();
           calculate();
       } });
-      orderCart.addEventListener('click', (e) => {  if(e.target.classList.contains("amount")){
-        changeAmount(e.target.getAttribute("data-id"))
-          
-           readLocalStorageOrder()
-      } });
-    
+     
+      listenButtonsOrderCart();
       
     finishOrderBtn.addEventListener('click', finishOrder);
+
 }
    
+function listenButtonsOrderCart(){
+    orderCart.addEventListener("click",(e)=>{
+      if(e.target.classList.contains("btn-less")){
+        subtractProduct(e.target.getAttribute("data-id"));
+      }
+      if (e.target.classList.contains("btn-inc")){
+        increaseProduct(e.target.getAttribute("data-id"));
+            }})}
 
 function readLocalStorageOrder(){
-    let totalOrder=0;
+
     shoppingCart=JSON.parse(localStorage.getItem('shoppingCart'))
     shoppingCart.forEach(function (element){
         let{img,name,price,amount,id}= element;
-        totalOrder+= price*amount;
+      
         const row = document.createElement('tr');
         row.innerHTML= `
             <td>
@@ -42,7 +48,7 @@ function readLocalStorageOrder(){
             <td>${name}</td>
             <td>${price}</td>
             <td>
-                <input type="number" class="form-control amount" id="amountOrder" min="1"  data-id="${id}" value=${amount}>
+           <div class="amnt"><button class="btn-less btnc" data-id="${id}">-</button>  <p class="card-text">${amount}</p> <button class="btn-inc btnc" data-id="${id}">+</button></div>
             </td>
             <td id='subtotals'>$${price * amount}</td>
             <td>
@@ -146,11 +152,7 @@ function finishOrder() {
         
       }
 
-      function changeAmount(product){
-        const amountOrder=document.getElementById("amountOrder").value;
-        if(amountOrder>1){
-        product.amount=amountOrder;
-      }}
+      
 
       function calculate(){
 let totalOrder=0
@@ -192,3 +194,7 @@ let totalOrder=0
         table.appendChild(body);
         div.appendChild(table);
         return div;}
+
+      
+
+  

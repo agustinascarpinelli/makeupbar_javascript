@@ -90,8 +90,8 @@
 
   .btnoc{
     color: $primary;
-    background-color: $secondary;
-    border-radius: 50%;
+  
+    padding: auto;
     &:hover{
       color: $dark;
     } 
