@@ -159,6 +159,13 @@ filter0.addEventListener("click", (e) => {
         addToShoppingCart(card);
       })
     );
+    const btnInfo = document.querySelectorAll(".btnInfo");
+  btnInfo.forEach((e) =>
+    e.addEventListener("click", (e) => {
+      let productId = e.target.getAttribute("data-id");
+      showInfo(productId);
+    })
+  );
   });
 });
 
@@ -197,6 +204,13 @@ filter1.addEventListener("click", (e) => {
         addToShoppingCart(card);
       })
     );
+    const btnInfo = document.querySelectorAll(".btnInfo");
+  btnInfo.forEach((e) =>
+    e.addEventListener("click", (e) => {
+      let productId = e.target.getAttribute("data-id");
+      showInfo(productId);
+    })
+  );
   });
 });
 
@@ -235,6 +249,13 @@ filter2.addEventListener("click", (e) => {
         addToShoppingCart(card);
       })
     );
+    const btnInfo = document.querySelectorAll(".btnInfo");
+  btnInfo.forEach((e) =>
+    e.addEventListener("click", (e) => {
+      let productId = e.target.getAttribute("data-id");
+      showInfo(productId);
+    })
+  );
   });
 });
 
@@ -273,6 +294,13 @@ filter3.addEventListener("click", (e) => {
         addToShoppingCart(card);
       })
     );
+    const btnInfo = document.querySelectorAll(".btnInfo");
+  btnInfo.forEach((e) =>
+    e.addEventListener("click", (e) => {
+      let productId = e.target.getAttribute("data-id");
+      showInfo(productId);
+    })
+  );
   });
 });
 
@@ -311,5 +339,12 @@ filter4.addEventListener("click", (e) => {
         addToShoppingCart(card);
       })
     );
+    const btnInfo = document.querySelectorAll(".btnInfo");
+  btnInfo.forEach((e) =>
+    e.addEventListener("click", (e) => {
+      let productId = e.target.getAttribute("data-id");
+      showInfo(productId);
+    })
+  );
   });
 });

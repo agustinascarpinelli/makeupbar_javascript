@@ -1,7 +1,10 @@
 const containerProducts = document.querySelector(".containerProducts");
 const sidebar = document.querySelector(".sidebar");
+const btnSus=document.getElementById("buttonSus");
+
 const btnShopping = document.querySelector(".btnShopping");
 let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart")) || [];
+
 
 btnShopping.addEventListener("click", () => {
   sidebar.classList.toggle("active");
@@ -118,6 +121,25 @@ const increaseNumberShoppingCart = () => {
   let total = shoppingCart.reduce((acc, ite) => acc + ite.amount, 0);
   document.querySelector(".amount").textContent = total;
 };
+
+
+btnSus.addEventListener('click',(e)=>{
+  e.preventDefault();
+  const inputSus=document.getElementById("formSuscribe")
+  if(inputSus.value !=""){
+  swal.fire({
+    title: "¡Gracias por suscribirte!",
+    color: "#C24660",
+    text: "Estaras recibiendo las mejores ofertas semanales",
+    background: "#EEEEED",
+    showConfirmButton:false,
+    timer:2000,
+  });
+inputSus.value="" } 
+  else {
+    inputSus.value="Completa tu email";
+  }
+})
 
 showShoppingCart();
 listenButtonsSideBar();
