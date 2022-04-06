@@ -79,11 +79,17 @@ const clearProduct = (productClear) => {
 
 const clearCart = () => {
   shoppingCart.length = 0;
+  localStorage.setItem(
+    "shoppingCart",
+    JSON.stringify(shoppingCart)
+  );
   let total = 0;
   document.querySelector(".amount").textContent = total;
 
   showShoppingCart();
 };
+
+
 const processOrder = () => {
   location.href = "order.html";
 };

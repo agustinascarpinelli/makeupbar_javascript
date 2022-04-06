@@ -13,6 +13,9 @@ justify-items: center;
     visibility: hidden;
     left: 70%;
     padding-bottom: 1rem;
+    .totalAm{
+        margin-top: 1rem;
+    }
     
 }
 
@@ -25,6 +28,10 @@ justify-items: center;
  text-align: center;
     h5 {
         font-size: 1rem;
+    }
+    h2{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 .amnt{
     display: flex;

@@ -1,7 +1,7 @@
 const orderCart = document.getElementById("orderCart");
 const client = document.getElementById("client");
 const email = document.getElementById("email");
-const finishOrderBtn = document.getElementById("finish-order");
+const finish = document.getElementById("finish");
 const total = document.getElementById("total");
 const orderList = document.querySelector("#orderList tbody");
 const discountOrder = document.getElementById("discountOrder");
@@ -21,10 +21,13 @@ function loadEvents() {
       }
     }
   });
+  finish.addEventListener("click", (e) => {
+    if (e.target.classList.contains("finish-order")) {
+      finishOrder(e);
+    }
+  });
 
   listenButtonsOrderCart();
-
-  finishOrderBtn.addEventListener("click", finishOrder);
 }
 
 function listenButtonsOrderCart() {
@@ -61,18 +64,20 @@ function readLocalStorageOrder() {
     orderList.appendChild(row);
   });
 }
-function finishOrder() {
+function finishOrder(e) {
   if (shoppingCart.length === 0) {
+    e.preventDefault();
     Swal.fire({
       type: "error",
       title: "No has agregado productos",
       text: "Selecciona productos para poder seguir con la compra",
       showConfirmButton: false,
-      timer: 1400,
+      timer: 2000,
     }).then(function () {
       window.location = "allProducts.html";
     });
   } else if (client.value === "" || email.value === "") {
+    e.preventDefault();
     Swal.fire({
       type: "error",
       title: "No ha ingresado sus datos",
@@ -85,14 +90,21 @@ function finishOrder() {
 
     document
       .getElementById("process-pay")
-      .addEventListener("submit", function (event) {
-        event.preventDefault();
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
 
         const serviceID = "service_ld2hgjg";
         const templateID = "template_pot36v5";
 
-        emailjs.sendForm(serviceID, templateID,this).then(
+        emailjs.sendForm(serviceID, templateID, this).then(
           () => {
+            Swal.fire({
+              title: "Gracias por su compra!",
+              text: "Se le ha enviado un mail con el detalle de la compra",
+              showConfirmButton: false,
+              timer: 5000,
+            });
+
             setTimeout(() => {
               shoppingCart.length = 0;
               sessionStorage.clear();
@@ -100,18 +112,11 @@ function finishOrder() {
                 "shoppingCart",
                 JSON.stringify(shoppingCart)
               );
-              Swal.fire({
-                title: "Gracias por su compra!",
-                text: "Se le ha enviado un mail con el detalle de la compra",
-                showConfirmButton: false,
-              });
               window.location = "index.html";
-            }, 3000);
+            }, 2000);
           },
           (err) => {
-            alert(
-              "Error al enviar el email\r\n Response:\n " + JSON.stringify(err)
-            );
+            console.log("FAILED...", err);
           }
         );
       });

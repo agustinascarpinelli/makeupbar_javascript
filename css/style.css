@@ -5,7 +5,7 @@
 
 body.body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url("../imagenes/bgmarblee.jpg");
+  background-image: url("../images/bgmarblee.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed; }
@@ -173,42 +173,35 @@ body.body {
       color: white;
       padding: 2px; }
 
-footer {
+.navbar-light .navbar-nav .nav-link {
+  color: #C24660 !important; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #352723 !important; }
+
+.footer2 {
   background-color: #D6B4B2;
-  width: 100%;
-  text-align: center;
-  justify-content: center; }
-  footer a {
+  width: 100%; }
+  .footer2 .row {
+    align-items: center; }
+  .footer2 a {
     color: #C24660;
     font-size: 1rem;
     font-weight: bold;
     padding: 10px; }
-    footer a:hover {
+    .footer2 a:hover {
       color: #352723; }
-  footer p {
-    color: #352723;
-    text-align: center; }
-  footer form .alig {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #C24660;
-    font-weight: bold;
-    font-size: 1rem; }
-    footer form .alig ion-icon {
-      font-size: 40px; }
-  footer form input.form-control:focus {
+  .footer2 h5 {
+    color: #C24660; }
+  .footer2 input.form-control:focus {
     outline: none !important;
     outline-width: 0 !important;
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     border: none; }
-
-.footer2 {
-  background-color: #D6B4B2;
-  width: 100%; }
+  .footer2 button {
+    margin-bottom: 1rem; }
 
 .carousel h1 {
   font-size: 75px;
@@ -367,6 +360,8 @@ footer {
   visibility: hidden;
   left: 70%;
   padding-bottom: 1rem; }
+  .sidebar .totalAm {
+    margin-top: 1rem; }
 
 .active {
   visibility: visible; }
@@ -375,6 +370,9 @@ footer {
     text-align: center; }
     .active .shopping-box h5 {
       font-size: 1rem; }
+    .active .shopping-box h2 {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
     .active .shopping-box .amnt {
       display: flex;
       flex-direction: row;
@@ -444,6 +442,13 @@ footer {
   .orderPage h2 {
     color: #C24660;
     font-weight: bold; }
+  .orderPage input.form-control:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none; }
   .orderPage #list-order thead tr th {
     color: #C24660; }
   .orderPage #total {
@@ -459,3 +464,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start; }
+
+@media (max-width: 768px) {
+  .disC {
+    display: flex; } }

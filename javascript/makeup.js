@@ -15,7 +15,7 @@ class Makeup {
 let divProducts = document.getElementById("makeup-products");
 
 async function showProducts() {
-  const response = await fetch("./json/products.json");
+  const response = await fetch("json/products.json");
   return await response.json();
 }
 showProducts().then((products) => {
@@ -23,9 +23,7 @@ showProducts().then((products) => {
   products.forEach((product, index) => {
     divProducts.innerHTML += `
     <div class="card cardProduct" style="width: 18rem;">
-<div class="img-prod-div"><img src="./imagenes/img-0${product.code}/${
-      product.img
-    }" class="imgProd card-img-top" alt="..."> </div>
+<div class="img-prod-div"><img onmouseout="this.src='images/img-0${product.code}/${product.img}';"onmouseover="this.src='images/img-0${product.code}/${product.img2}';" src="images/img-0${product.code}/${product.img}"  class="imgProd card-img-top" alt="${product.title}"> </div>
 <div class="card-body">
 <h5 class="title">${product.title}</h5>
 <p class="price">$<span> ${product.price}</span></p>
@@ -60,7 +58,7 @@ showProducts().then((products) => {
 showProducts();
 
 const showInfo = (productId) => {
-  fetch("../json/products.json")
+  fetch("json/products.json")
     .then((res) => res.json())
     .then((products) => {
       let info = products.find((product) => product.id == Number(productId));
@@ -69,10 +67,10 @@ const showInfo = (productId) => {
         html: `<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./imagenes/img-0${info.code}/${info.img}" class="d-block w-100" alt="...">
+        <img src="images/img-0${info.code}/${info.img}" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./imagenes/img-0${info.code}/${info.img2}" class="d-block w-100" alt="...">
+        <img src="images/img-0${info.code}/${info.img2}" class="d-block w-100" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -139,9 +137,7 @@ filter0.addEventListener("click", (e) => {
     products.forEach((product, index) => {
       divProducts.innerHTML += `
      <div class="card cardProduct" style="width: 18rem;">
- <div class="img-prod-div"><img src="./imagenes/img-0${product.code}/${
-        product.img
-      }" class="imgProd card-img-top" alt="..."> </div>
+     <div class="img-prod-div"><img onmouseout="this.src='images/img-0${product.code}/${product.img}';"onmouseover="this.src='images/img-0${product.code}/${product.img2}';" src="images/img-0${product.code}/${product.img}"  class="imgProd card-img-top" alt="${product.title}"> </div>
  <div class="card-body">
  <h5 class="title">${product.title}</h5>
  <p class="price">$<span> ${product.price}</span></p>
@@ -178,9 +174,7 @@ filter1.addEventListener("click", (e) => {
       if (product.code === 2 || product.code === 3) {
         divProducts.innerHTML += `
      <div class="card cardProduct" style="width: 18rem;">
- <div class="img-prod-div"><img src="./imagenes/img-0${product.code}/${
-          product.img
-        }" class="imgProd card-img-top" alt="..."> </div>
+     <div class="img-prod-div"><img onmouseout="this.src='images/img-0${product.code}/${product.img}';"onmouseover="this.src='images/img-0${product.code}/${product.img2}';" src="images/img-0${product.code}/${product.img}"  class="imgProd card-img-top" alt="${product.title}"> </div>
  <div class="card-body">
  <h5 class="title">${product.title}</h5>
  <p class="price">$<span> ${product.price}</span></p>
@@ -218,9 +212,7 @@ filter2.addEventListener("click", (e) => {
       if (product.code === 4 || product.code === 5 || product.code === 6) {
         divProducts.innerHTML += `
      <div class="card cardProduct" style="width: 18rem;">
- <div class="img-prod-div"><img src="./imagenes/img-0${product.code}/${
-          product.img
-        }" class="imgProd card-img-top" alt="..."> </div>
+     <div class="img-prod-div"><img onmouseout="this.src='images/img-0${product.code}/${product.img}';"onmouseover="this.src='images/img-0${product.code}/${product.img2}';" src="images/img-0${product.code}/${product.img}"  class="imgProd card-img-top" alt="${product.title}"> </div>
  <div class="card-body">
  <h5 class="title">${product.title}</h5>
  <p class="price">$<span> ${product.price}</span></p>
@@ -258,9 +250,7 @@ filter3.addEventListener("click", (e) => {
       if (product.code === 1) {
         divProducts.innerHTML += `
      <div class="card cardProduct" style="width: 18rem;">
- <div class="img-prod-div"><img src="./imagenes/img-0${product.code}/${
-          product.img
-        }" class="imgProd card-img-top" alt="..."> </div>
+     <div class="img-prod-div"><img onmouseout="this.src='images/img-0${product.code}/${product.img}';"onmouseover="this.src='images/img-0${product.code}/${product.img2}';" src="images/img-0${product.code}/${product.img}"  class="imgProd card-img-top" alt="${product.title}"> </div>
  <div class="card-body">
  <h5 class="title">${product.title}</h5>
  <p class="price">$<span> ${product.price}</span></p>
@@ -298,9 +288,7 @@ filter4.addEventListener("click", (e) => {
       if (product.code === 8 || product.code === 7) {
         divProducts.innerHTML += `
      <div class="card cardProduct" style="width: 18rem;">
- <div class="img-prod-div"><img src="./imagenes/img-0${product.code}/${
-          product.img
-        }" class="imgProd card-img-top" alt="..."> </div>
+     <div class="img-prod-div"><img onmouseout="this.src='images/img-0${product.code}/${product.img}';"onmouseover="this.src='images/img-0${product.code}/${product.img2}';" src="images/img-0${product.code}/${product.img}"  class="imgProd card-img-top" alt="${product.title}"> </div>
  <div class="card-body">
  <h5 class="title">${product.title}</h5>
  <p class="price">$<span> ${product.price}</span></p>

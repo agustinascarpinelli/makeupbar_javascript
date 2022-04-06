@@ -6,6 +6,22 @@
         color:$primary;
         font-weight: bold;
     }
+    input.form-control:focus {
+
+        outline:none !important;
+    
+        outline-width: 0 !important;
+    
+        box-shadow: none;
+    
+        -moz-box-shadow: none;
+    
+        -webkit-box-shadow: none;
+        
+        border:none;
+    
+    }
+
 
     #list-order{
         thead{
@@ -38,3 +54,10 @@
    
 }
 }
+
+@media (max-width: 768px){
+.disC{
+    display: flex;
+}
+}
+

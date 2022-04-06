@@ -1,9 +1,8 @@
-footer{
+
+.footer2{
     background-color: $secondary;
     width:100%;
-    text-align: center;
-    justify-content: center;
-    
+    .row{align-items: center;}
     a{
         color:$primary;
         font-size: 1rem;
@@ -13,47 +12,28 @@ footer{
             color:$dark;
         }
     }
-
-p{
-    color:$dark;
-    text-align: center;
-}
-form{
-.alig{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color:$primary;
-    font-weight: bold;
-    font-size: 1rem;
-   
-    ion-icon{
-        font-size: 40px;
-
+    h5{
+        color: $primary;
     }
+    input.form-control:focus {
+
+        outline:none !important;
     
-}
-input.form-control:focus {
-
-    outline:none !important;
-
-    outline-width: 0 !important;
-
-    box-shadow: none;
-
-    -moz-box-shadow: none;
-
-    -webkit-box-shadow: none;
+        outline-width: 0 !important;
     
-    border:none;
+        box-shadow: none;
+    
+        -moz-box-shadow: none;
+    
+        -webkit-box-shadow: none;
+        
+        border:none;
+    
+    }
 
-}
-}}
-
-.footer2{
-    background-color: $secondary;
-    width:100%;
+    button{
+        margin-bottom: 1rem;
+    }
 }
 
 
