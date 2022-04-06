@@ -26,7 +26,7 @@
     border-radius: 0.5rem;
     border: none;
     padding: 5px;
-    color: $secondary;
+    color: $primary;
     text-transform: uppercase;
     font-weight: bold;
     }
@@ -71,7 +71,9 @@
     border-radius: 0.5rem;
     border: none;
     max-width:10rem;
-    color: $secondary;
+    color: $primary;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     text-transform: uppercase;
     font-weight: bold;
     
@@ -82,6 +84,8 @@
     border-radius: 0.5rem;
     border: none;
     max-width:12rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     color: $primary;
     text-transform: uppercase;
     font-weight: bold;

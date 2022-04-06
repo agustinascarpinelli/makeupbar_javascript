@@ -42,7 +42,7 @@ body.body {
   border-radius: 0.5rem;
   border: none;
   padding: 5px;
-  color: #D6B4B2;
+  color: #C24660;
   text-transform: uppercase;
   font-weight: bold; }
 
@@ -79,7 +79,9 @@ body.body {
   border-radius: 0.5rem;
   border: none;
   max-width: 10rem;
-  color: #D6B4B2;
+  color: #C24660;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   text-transform: uppercase;
   font-weight: bold; }
 
@@ -88,6 +90,8 @@ body.body {
   border-radius: 0.5rem;
   border: none;
   max-width: 12rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: #C24660;
   text-transform: uppercase;
   font-weight: bold; }
