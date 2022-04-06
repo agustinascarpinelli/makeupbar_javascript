@@ -13,6 +13,11 @@
       text-decoration: none;
     } 
   }
+  @media (max-width: 768px){
+    body.body{
+      background-size: cover;
+    }
+  }
  .container{
   background-color: #DDDD;
  }
@@ -28,6 +33,4 @@
 @import './shoppingCart/shoppingCart';
 @import './sections/questions';
 @import './sections/contact';
-@import './sections/signin';
-@import './sections/signup';
 @import './sections/order';

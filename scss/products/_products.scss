@@ -23,8 +23,8 @@
   width:20rem;
   align-items: center;
 img{
-  width:280px;
-  height:300px;
+  width:13rem;
+  
   
  
 }
@@ -43,7 +43,10 @@ h2{
   margin-top:2rem;
   margin-bottom:2rem;
   width:280px;
-  height:550px;
+  height:580px;
+  .btnInfo{
+    margin-top: 1rem;
+  }
  .card-body{
  
    text-align: center;
@@ -64,15 +67,21 @@ h2{
    .products{
      grid-template-columns: repeate(1, auto);
      grid-template-rows: repeat(6,auto);
-     grid-template-areas: "h2""card2""card3""card4""card5""card6";
+     grid-template-areas: "h2" "card2" "card3" "card4" "card5" "card6";
    }
    .prodFilter{
     button{ 
       img{
-      width:5rem;
+      width:5rem
+      
    }
+   flex-wrap: wrap;
+   
 
-  }}}
+
+
+
+  } flex-wrap: wrap;}}
 
     
   .prodFilter{
@@ -86,4 +95,19 @@ h2{
       margin-bottom: 1rem;
       img{ width:10rem;}
     }
+  }
+
+  .descriptionInfo{
+    color: $primary;
+  }
+  .titleInfo{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: $primary;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .priceInfo{
+    font-weight: bold;
+
   }

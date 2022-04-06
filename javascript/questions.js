@@ -1,5 +1,5 @@
-let questions=document.getElementById("questions")
-questions.innerHTML+=`
+let questions = document.getElementById("questions");
+questions.innerHTML += `
 <h1>Preguntas Frecuentes</h1>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
@@ -86,4 +86,4 @@ questions.innerHTML+=`
   <div class="accordion-body">Dejanos tu consulta <a href="contact.html">aqui</a> para que podamos ayudarte</div>
 </div>
 </div>
-</div>`
+</div>`;

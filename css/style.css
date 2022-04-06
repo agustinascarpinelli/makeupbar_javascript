@@ -12,6 +12,10 @@ body.body {
   body.body a {
     text-decoration: none; }
 
+@media (max-width: 768px) {
+  body.body {
+    background-size: cover; } }
+
 .container {
   background-color: #DDDD; }
 
@@ -103,20 +107,18 @@ body.body {
     color: #C24660;
     font-weight: bold;
     text-align: center;
-    /* animation-duration: 6s;
-        animation-name: slidein;
-      animation-iteration-count: infinite;
-       @debug @keyframes slidein {
-            from {
-              margin-left: 100%;
-              width: 100%
-            }
-          
-            to {
-              margin-left: 0%;
-              width: 100%;
-            }
-          }*/ }
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 40%; }
+  to {
+    margin-right: 50%;
+    width: 40%; } }
 
 .navbar {
   background-color: #D6B4B2;
@@ -127,8 +129,6 @@ body.body {
   .navbar .nav-link:focus,
   .navbar .nav-link:hover {
     color: black !important; }
-  .navbar .navbar-toggler-icon {
-    color: #C24660; }
   .navbar .logo {
     width: 80px; }
   .navbar div .navbar-nav {
@@ -206,9 +206,9 @@ footer {
     -webkit-box-shadow: none;
     border: none; }
 
-@media (max-width: 768px) {
-  .col-2 {
-    padding: 0.5rem; } }
+.footer2 {
+  background-color: #D6B4B2;
+  width: 100%; }
 
 .carousel h1 {
   font-size: 75px;
@@ -294,8 +294,7 @@ footer {
     width: 20rem;
     align-items: center; }
     .products .card img {
-      width: 280px;
-      height: 300px; }
+      width: 13rem; }
   .products h2 {
     color: #C24660;
     font-weight: bold;
@@ -306,7 +305,9 @@ footer {
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 280px;
-    height: 550px; }
+    height: 580px; }
+    .products .cardProduct .btnInfo {
+      margin-top: 1rem; }
     .products .cardProduct .card-body {
       text-align: center;
       font-weight: bold; }
@@ -321,8 +322,12 @@ footer {
     grid-template-columns: repeate(1, auto);
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "h2" "card2" "card3" "card4" "card5" "card6"; }
-  .prodFilter button img {
-    width: 5rem; } }
+  .prodFilter {
+    flex-wrap: wrap; }
+    .prodFilter button {
+      flex-wrap: wrap; }
+      .prodFilter button img {
+        width: 5rem; } }
 
 .prodFilter {
   display: flex;
@@ -334,6 +339,19 @@ footer {
     margin-bottom: 1rem; }
     .prodFilter button img {
       width: 10rem; }
+
+.descriptionInfo {
+  color: #C24660; }
+
+.titleInfo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #C24660;
+  font-weight: bold;
+  font-size: 2rem; }
+
+.priceInfo {
+  font-weight: bold; }
 
 .sidebar {
   display: grid;
@@ -419,46 +437,6 @@ footer {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     border: none; }
-
-#loginContainer {
-  padding: 2rem;
-  text-align: center; }
-  #loginContainer .login {
-    color: #C24660; }
-    #loginContainer .login h1 {
-      font-weight: bold; }
-    #loginContainer .login a {
-      color: #C24660; }
-    #loginContainer .login a:hover {
-      color: #352723; }
-    #loginContainer .login button {
-      margin-top: 0.5rem;
-      margin-bottom: 1rem; }
-    #loginContainer .login input.form-control:focus {
-      outline: none !important;
-      outline-width: 0 !important;
-      box-shadow: none;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-      border: none; }
-
-.register {
-  display: grid;
-  color: #C24660; }
-  .register legend {
-    text-align: center;
-    font-weight: bold;
-    padding-top: 2rem; }
-  .register button {
-    text-align: center;
-    padding: 0rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    max-width: 10rem; }
-
-#loading {
-  display: none;
-  width: 20px; }
 
 .orderPage {
   padding-top: 1rem;

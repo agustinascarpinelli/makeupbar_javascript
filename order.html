@@ -21,10 +21,11 @@
 
 <body class="body">
     <header>
-        <div class="divDisc"><p class="discount ">3 y 6 cuotas sin interés / 20%Off acumulable con otras promociones abonando en efectivo o
-            transferencia bancaria</p></div>
+        <div class="divDisc">
+            <p class="discount ">10% OFF ingresando el codigo "ABRILMKB"</p>
+        </div>
         <!--nav bar-->
-        <nav class="navbar navbar2 navbar-expand-lg  ">
+        <nav class="navbar navbar2 navbar-expand-lg  navbar-light ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img class="logo" src="./imagenes/logo.png"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,7 +41,7 @@
                             </a>
 
                         </li>
-                       
+
                         <li class="nav-item ">
                             <a class="nav-link" href="questions.html" role="button" aria-expanded="false">
                                 Preguntas frecuentes
@@ -51,15 +52,12 @@
                                 Contacto
                             </a>
                         </li>
-                        <li class="nav-item icons ">
-                            <a class="nav-link" href="signin.html">
-                                <ion-icon name="person-outline"></ion-icon>
-                            </a>
-                        </li>
+
                         <li class="nav-item icons cart">
                             <a class="nav-link btnShopping" href="#">
                                 <ion-icon name="cart-outline"></ion-icon>
-                                <span class="amount">0</span> </a>
+                                <span class="amount">0</span>
+                            </a>
                 </div>
                 </li>
                 </ul>
@@ -68,10 +66,10 @@
         </nav>
     </header>
     <main>
-          <!--shopping cart-->
-          <div class="containerProducts">
+        <!--shopping cart-->
+        <div class="containerProducts">
             <div class="sidebar">
-                
+
             </div>
         </div>
         <div class="container orderPage">
@@ -82,19 +80,20 @@
                         <div class="form-group row">
                             <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
                             <div class="col-12 col-md-10">
-                                <input type="text" class="form-control" id="client"
-                                    placeholder="Ingresa nombre cliente" name="destinatario">
+                                <input type="text" class="form-control" id="client" placeholder="Ingresa nombre cliente"
+                                    name="destinatario">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
                             <div class="col-12 col-md-10">
-                                <input type="text" class="form-control" id="email" placeholder="Ingresa tu correo" name="cc_to">
+                                <input type="text" class="form-control" id="email" placeholder="Ingresa tu correo"
+                                    name="cc_to">
                             </div>
                         </div>
 
-                        <div id="orderCart" class="form-group table-responsive" >
-                            <table class="form-group table" id="orderList" >
+                        <div id="orderCart" class="form-group table-responsive">
+                            <table class="form-group table" id="orderList">
                                 <thead>
                                     <tr>
                                         <th scope="col">Imagen</th>
@@ -106,31 +105,35 @@
                                     </tr>
 
                                 </thead>
-                                <tbody >
+                                <tbody>
 
                                 </tbody>
+
                                 <tr>
+
                                     <th colspan="4" scope="col" class="text-right">Código de descuento :</th>
-                                            <th scope="col">
-                                                <input  id="discount" name="discount" class="font-weight-bold border-0" style="background-color: white;"></input>
-                                                <input type="submit" name="enviar" class="font-weight-bold border-0 btnDisc" style="background-color: white;"></input>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                        <th colspan="4" scope="col" class="text-right">TOTAL :</th>
-                                                <th scope="col">
-                                                    <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
-                                                </th>
-                                            </tr>
+                                    <th scope="col">
+                                        <input id="discount" name="discount" class="font-weight-bold border-0"
+                                            style="background-color: white;"></input>
+                                        <button class="button3 discountOrderCart" id="discountOrder" type="submit"
+                                            value="send">Enviar</button>
+                                    </th>
+                                </tr>
+
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                                    <th scope="col">
+                                        <input id="total" name="monto" class="font-weight-bold border-0" readonly
+                                            style="background-color: white;"></input>
+                                    </th>
+                                </tr>
 
                             </table>
-                           
-                            
+
+
                         </div>
 
-                        <div class="row justify-content-center" id="loaders">
-                            <img id="loading" src="imagenes/loading.gif" width="20">
-                        </div>
+
 
                         <div class="row justify-content-between">
                             <div class="col-md-4 mb-2">
@@ -151,56 +154,56 @@
         </div>
     </main>
 
- <!--footer-->
+    <!--footer-->
 
- <footer class="py-5">
-    <div class="row">
-        <div class="col-2">
-            <a link href="allProducts.html">Productos</a>
-        </div>
-     
-        <div class="col-2">
-            <a link href="questions.html">Preguntas frecuentes</a>
-        </div>
-        <div class="col-2">
-            <a link href="contact.html">Contacto</a>
+    <footer class="py-5">
+        <div class="row">
+            <div class="col-2">
+                <a link href="allProducts.html">Productos</a>
+            </div>
+
+            <div class="col-2">
+                <a link href="questions.html">Preguntas frecuentes</a>
+            </div>
+            <div class="col-2">
+                <a link href="contact.html">Contacto</a>
+            </div>
+
+            <div class="col-5 ">
+                <form>
+                    <h5 class="alig">
+                        <ion-icon name="mail-outline"></ion-icon>¡No te pierdas nuestras mejores ofertas solo para vos!
+                    </h5>
+                    <div class="d-flex w-100 gap-2">
+
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Ingresa tu email">
+                        <button class=" button2" type="button">¡Suscribirme!</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <div class="col-5 ">
-            <form>
-                <h5 class="alig">
-                    <ion-icon name="mail-outline"></ion-icon>¡No te pierdas nuestras mejores ofertas solo para vos!
-                </h5>
-                <div class="d-flex w-100 gap-2">
+        <hr>
+        <p>&copy; Copyright 2022. Todos los derechos reservados.</p>
 
-                    <input id="newsletter1" type="text" class="form-control" placeholder="Ingresa tu email">
-                    <button class=" button2" type="button">¡Suscribirme!</button>
-                </div>
-            </form>
-        </div>
+    </footer>
+
+
+
+
     </div>
 
-    <hr>
-    <p>&copy; Copyright 2022. Todos los derechos reservados.</p>
 
-</footer>
-
-
-
-
-    </div>
-
-  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
-     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="javascript/shoppingCart.js"></script>
     <script src="javascript/order.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

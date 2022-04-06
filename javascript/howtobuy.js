@@ -1,4 +1,4 @@
-let howtobuy=document.getElementsByClassName("howtobuy");
-howtobuy.innerHTML+=`
+let howtobuy = document.getElementsByClassName("howtobuy");
+howtobuy.innerHTML += `
 
-`
+`;

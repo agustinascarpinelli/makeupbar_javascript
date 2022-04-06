@@ -3,7 +3,7 @@
   "code":5,
   "description":"Hermosos rubores de la marca Milani",
   "img":"Milani_Powder_Blush_Romantic_Rose.jpg",
-  "img2":"",
+  "img2":"Milani_Powder_Blush_Romantic_Rose2.jpeg",
   "price":4562.50,
   "stock":10,
   "id":502
@@ -43,7 +43,7 @@
     "code":1,
     "description":"Labial líquido larga duración",
     "img":"A2_Pigments_Lipstick_Canvas_Ryden.jpg",
-    "img2":"A2_Pigments_Lipstick_Canvas_Ryden2.jpg",
+    "img2":"A2_Pigments_Lipstick _Canvas_Ryden2.jpg",
     "price":1200,
     "stock":10,
     "id":101
@@ -53,7 +53,7 @@
     "code":3,
     "description":"Los correctores HD Pro de L.A. Girl son resistentes a las arrugas con una cobertura opaca en una textura cremosa pero ligera. La fórmula correctora de larga duración camufla la oscuridad debajo de los ojos, el enrojecimiento y las imperfecciones de la piel. Los correctores proporcionan una cobertura completa y de aspecto natural, incluso tonos de piel, cubren las ojeras y minimizan las líneas finas alrededor de los ojos.",
     "img":"LA_Girl_Pro_Concealer_Light_Ivory.jpg",
-    "img2":"",
+    "img2":"LA_Girl_Pro_Concealer_Light_Ivory2.jpeg",
     "price":2250,
     "stock":10,
     "id":304
@@ -63,7 +63,7 @@
     "code":8,
     "description":"Tendrás 10 tonos cremosos, 4 tonos de cromo duo, 2 tonos de purpurina, 1 sombra brillante y 1 corrector para trabajar. Es una combinación que ofrece infinitas posibilidades.",
     "img":"W7_Socialite_Palette.jpeg",
-    "img2":"",
+    "img2":"W7_Socialite_Palette2.jpeg",
     "price":7875,
     "stock":10,
     "id":805
@@ -73,7 +73,7 @@
     "code":4,
     "description":"Esculpe, sombrea e ilumina con esta paleta de contorno en polvo de 4 tonos. Es personalizable para combinar con el tono de su piel y está impregnado de vitamina E. ¡Obtenga una tez hermosa y nutrida todo el día!",
     "img":"ELF_Palette_Contour_Light.jpg",
-    "img2":"",
+    "img2":"ELF_Palette_Contour_Light2.jpg",
     "price":5250,
     "stock":10,
     "id":403
@@ -83,7 +83,7 @@
     "code":1,
     "description":"El famoso bálsamo labial hidratante Carmex sabor wintergreen,origen: USA",
     "img":"CARMEX _Tube_Wintergreen.png",
-    "img2":"",
+    "img2":"CARMEX _Tube_Wintergreen2.jpg",
     "price":1350,
     "stock":10,
     "id":102
@@ -93,7 +93,7 @@
     "code":2,
     "description":"La HD PRO BB Cream está formulada sin parabenos y sin fragancia para mimar la piel sensible y nutrirla generosamente con vitamina B3, C y E añadidas. La fórmula sedosa cubre una amplia gama de tonos de piel con ocho tonos diferentes. ",
     "img":"LA_Girl_HD_PRO_BB_Cream-Light.jpg",
-    "img2":"",
+    "img2":"LA_Girl_HD_PRO_BB_Cream-Light2.jpeg",
     "price":5375,
     "stock":10,
     "id":203
@@ -103,7 +103,7 @@
     "code":3,
     "description":"Los correctores HD Pro de L.A. Girl son resistentes a las arrugas con una cobertura opaca en una textura cremosa pero ligera. La fórmula correctora de larga duración camufla la oscuridad debajo de los ojos, el enrojecimiento y las imperfecciones de la piel. Los correctores proporcionan una cobertura completa y de aspecto natural, incluso tonos de piel, cubren las ojeras y minimizan las líneas finas alrededor de los ojos.",
     "img":"LA_Girl_Pro_Concealer_Fawn.jpg",
-    "img2":"",
+    "img2":"Wetnwild_Photo_Focus_Concealer_Medium_Tawny2.jpg",
     "price":2250,
     "stock":10,
     "id":303
@@ -113,7 +113,7 @@
     "code":2,
     "description":"La base líquida iluminadora de larga duración de alta definición PRO.coverage es ideal para un acabado impecable y de cobertura total. La fórmula liviana es cómoda para usar durante todo el día. Fórmula sin parabenos con antioxidantes añadidos que ayuda a hidratar y mejorar la apariencia de la piel. Ahora disponible para ampliar aún más la gama de colores, un innovador mezclador de base blanca para ajustar y personalizar el color.",
     "img":"LA_Girl_Pro.Cover_Foundation_White.jpg",
-    "img2":"",
+    "img2":"LA_Girl_Pro.Cover_Foundation_White2.jpeg",
     "price":5375,
     "stock":10,
     "id":204
@@ -133,7 +133,7 @@
     "code":1,
     "description":"Deliciosamente dulce y elaborado con azúcar extrafina, el exfoliante labial Perfect Pout eliminará la piel muerta de tus labios, manteniéndolos suaves y con una sensación celestial. Con mantequilla de semillas de Murumuru para hidratar y nutrir profundamente; además de la Manteca de Semillas de Tucuma que actúa como agente emoliente, lubricante e hidratante.La vitamina E mejora la textura y el contenido de humedad de los labios.",
     "img":"WetnWild_Watermelon_Lip_Scrub.jpg",
-    "img2":"",
+    "img2":"WetnWild_Watermelon_Lip_Scrub2.jpg",
     "price":2568.50,
     "stock":10,
     "id":105
@@ -163,7 +163,7 @@
     "code":3,
     "description":"Un corrector de cobertura total, hidratante y de larga duración que cuenta con un aplicador perfecto para ocultar, corregir, contornear y resaltar para una piel impecable. La fórmula altamente pigmentada es ligera con un acabado satinado que no se asienta en las líneas finas o pliegues.",
     "img":"ELF_HYDRATING_CAMO_CONCEALER_MEDIUM_SAND.jpg",
-    "img2":"",
+    "img2":"ELF_HYDRATING_CAMO_CONCEALER_MEDIUM_SAND2.jpg",
     "price":3085,
     "stock":10,
     "id":302
@@ -183,7 +183,7 @@
     "code":4,
     "description":"Ilumina, contornea y da forma a tu rostro con esta paleta",
     "img":"NYX_Palette_Pro_Contour.jpg",
-    "img2":"",
+    "img2":"NYX_Palette_Pro_Contour2.jpg",
     "price":10500,
     "stock":10,
     "id":402
@@ -243,7 +243,7 @@
     "code":2,
     "description":"La base líquida iluminadora de larga duración de alta definición PRO.coverage es ideal para un acabado impecable y de cobertura total. La fórmula ligera es cómoda para usar todo el día. La fórmula sin parabenos con antioxidantes agregados ayuda a hidratar y mejorar la apariencia de la piel. Ahora disponible para ampliar aún más la gama de colores, un innovador mezclador de base blanca para ajustar y personalizar el color.",
     "img":"LA_Girl_Pro.Cover_Foundation_Natural.jpg",
-    "img2":"",
+    "img2":"LA_Girl_Pro.Cover_Foundation_Natural2.png",
     "price":4312.50,
     "stock":10,
     "id":205
@@ -303,7 +303,7 @@
      "code":7,
      "description":"La famosa máscara de pestañas de Too Faced, ahora waterproof",
      "img":"Too_Faced_Better_Than_Sex_Mascara_Waterproof.jpg",
-     "img2":"",
+     "img2":"Too_Faced_Better_Than_Sex_Mascara_Waterproof2.png",
      "price":12500,
      "stock":10,
      "id":701
@@ -347,7 +347,7 @@
      "code":6,
      "description":"Esta combinación ideal de iluminadores y tonos de contour es perfecta para crear tu look lleno de matices y con un acabado naturalmente espectacular. Dale forma y luz a tu rostro a tu estilo y tu gusto.",
      "img":"Makeup_Revolution_Soph_X_Highlighter_Palette.jpg",
-     "img2":"",
+     "img2":"Makeup_Revolution_Soph_X_Highlighter_Palette2.jpg",
      "price":8687.50,
      "stock":10,
      "id":602
@@ -358,7 +358,7 @@
     "code":7,
     "description":"Nueva máscara de pestañas Las Sensational Sky High, para una longitud sin límites + un volumen redefinido",
     "img":"Maybelline_Sky_High_Mascara_800_Blackest_Black.png",
-    "img2":"",
+    "img2":"Maybelline_Sky_High_Mascara_800_Blackest_Black2.jpg",
     "price":5375,
     "stock":10,
     "id":702
@@ -368,7 +368,7 @@
     "code":8,
     "description":"35 tonos para sacudir tu mundo. Esta paleta es mucho más que una obsesión. Es una pasión. Sus brillantes pigmentos duocromo y sus irresistibles tonos mate desatarán en ti un torbellino de emociones. Haz la prueba, volverás a por más. Prepárate para romper corazones a tu paso con la última incorporación a nuestra familia de 35 sombras.",
     "img":"Morphe_35V_Palette.jpg",
-    "img2":"",
+    "img2":"Morphe_35V_Palette2.jpg",
     "price":18000,
     "stock":10,
     "id":801

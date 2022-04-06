@@ -1,5 +1,5 @@
-let contact=document.getElementById("contact")
-contact.innerHTML+=`
+let contact = document.getElementById("contact");
+contact.innerHTML += `
 <h1>CONTACTO</h1>
 <p><ion-icon name="logo-whatsapp"></ion-icon> <a href="https://wa.me/1150413703?text=¡Hola! queria hacer una consulta...">1150413703</a>
 <p><ion-icon name="mail-outline"></ion-icon><a href="mailto:agus.sc@live.com.ar?subject:Contacto&body=Hola!Queria hacer una consulta..."> hola@makeupbar.com.ar</a>
@@ -18,17 +18,14 @@ contact.innerHTML+=`
 <div class="col-auto">
     <input type="submit" class="button3" id="send" value="Enviar"/>
   </div>
-  `
-let buttonSend=document.getElementById("send")
-buttonSend.onclick=()=>{
+  `;
+let buttonSend = document.getElementById("send");
+buttonSend.onclick = () => {
   swal.fire({
-    title : "Gracias por escribirnos!",
-    color:"#C24660",
+    title: "Gracias por escribirnos!",
+    color: "#C24660",
     text: "Nos pondremos en contacto a la brevedad",
     icon: "success",
-    background:"#EEEEED",
-    
-});
-}
-
-
+    background: "#EEEEED",
+  });
+};

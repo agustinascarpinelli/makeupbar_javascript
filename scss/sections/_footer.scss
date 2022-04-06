@@ -51,11 +51,15 @@ input.form-control:focus {
 }
 }}
 
-@media (max-width: 768px) {
-    .col-2{
-      padding: 0.5rem;
-    }
+.footer2{
+    background-color: $secondary;
+    width:100%;
+}
+
+
+
+
 
       
-    }
+    
   
